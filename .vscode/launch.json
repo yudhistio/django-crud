@@ -7,7 +7,7 @@
         {
             "name": "Python: Django",
             "type": "python",
-            "request": "launch",
+            "request": "launch",dawdada
             "program": "${workspaceFolder}/manage.py",
             "args": [
                 "runserver"
