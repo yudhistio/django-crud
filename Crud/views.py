@@ -20,9 +20,9 @@ class PostDetailView(DetailView):
 def postview(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
-    if form.is_valid():
-        form.save()
-    return redirect('index')
+        if form.is_valid():
+            form.save()
+        return redirect('index')
     form = PostForm()
     return render(request,'Crud/post.html',{'form': form})
 
